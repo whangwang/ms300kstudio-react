@@ -1,0 +1,79 @@
+{
+  "data": [{
+    "img": "./staytuned.png",
+    "title": "StayTuned Design",
+    "description": "StayTuned Design是一個整合設計師和消費者的服裝購物網站，工作室成員在其中分別擔任前、後端和UI設計師協助網站開發，為期大約半年，目前仍在開發中。",
+    "hasDemo": true,
+    "hasCode": false,
+    "demoLink": "https://staytuned.design/st_web/promotion",
+    "codeLink": "https://staytuned.design",
+    "type": ["web","ui"]
+  },{
+    "img": "./keyboard.png",
+    "title": "佔領鍵盤-多人連線遊戲",
+    "description": "透過多人連線，讓玩家在時限內反覆利用pixel覆蓋畫布，進而創造需要彼此共同合作，才能達到目標的遊戲。我們在遊戲中將玩家分為兩組，同樣必須仰賴彼此的默契和戰略，才能有效獲得勝利。",
+    "hasDemo": false,
+    "hasCode": true,
+    "demoLink": "http://www.google.com",
+    "codeLink": "https://github.com/eric033014/KeyBoard-Web-Game",
+    "type": ["web"]
+  },{
+    "img": "./mining_nba.png",
+    "title": "預測分析-NBA數據網站",
+    "description": "此為一個預測分析 NBA Data 的平常，主要有三個功能#br功能： 1.名人堂預測：該選中球員如果當下退役，進入名人堂的機率為何？",
+    "hasDemo": false,
+    "hasCode": true,
+    "demoLink": "http://www.google.com",
+    "codeLink": "https://github.com/eric033014/Mining_Web",
+    "type": ["web"]
+  },{
+    "img": "./todo.png",
+    "title": "todoList ",
+    "description": "一個簡單的todo list網站，可以讓使用者註冊登入，新增todos，並對todos分類。",
+    "hasDemo": true,
+    "hasCode": true,
+    "demoLink": "https://todo-whangwang.herokuapp.com",
+    "codeLink": "https://github.com/whangwang/todo",
+    "type": ["web","ui"]
+  },{
+    "img": "https://whangwang.github.io/img/ui-design/1/1.png",
+    "title": "Dcard抽卡 reDisgn",
+    "description": "這個專案是這次應徵Dcard暑期UI/UX實習設計的作業，挑一個Dcard APP的功能從設計角度上來改善。我選擇的是抽卡，目標是能提升使用者抽卡的誘因，並美化抽卡的UI介面。(連結內有詳細分析)",
+    "hasDemo": true,
+    "hasCode": false,
+    "demoLink": "https://whangwang.github.io/ui-design-01.html",
+    "codeLink": "https://github.com/whangwang/todo",
+    "demoTitle": "閱讀更多",
+    "type": ["ui"]
+  },{
+    "img": "https://whangwang.github.io/img/ui-design/2/1.png",
+    "title": "KKBOX Login reDesign",
+    "description": "之前在練習UI設計遇到登入/註冊介面設計時，決定選擇一個企業的既有登入畫面改造，而最後選上KKBOX。一起來看看我做了什麼變化吧!(連結內有詳細分析)",
+    "hasDemo": true,
+    "hasCode": false,
+    "demoLink": "https://whangwang.github.io/ui-design-02.html",
+    "codeLink": "https://github.com/whangwang/todo",
+    "demoTitle": "閱讀更多",
+    "type": ["ui"]
+  },{
+    "img": "https://mir-s3-cdn-cf.behance.net/project_modules/2800/2064ec57004279.59c4a869ed7fa.png",
+    "title": "平面設計",
+    "description": "平面設計作品收錄在工作室成員之個人網站中，目前總共有七項作品可供您參考，歡迎前往！",
+    "hasDemo": true,
+    "hasCode": false,
+    "demoLink": "https://whangwang.github.io/graphic.html",
+    "codeLink": "https://github.com/whangwang/todo",
+    "demoTitle": "前往",
+    "type": ["design"]
+  },{
+    "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/f4b14757006557.59c4c2a8468a3.png",
+    "title": "標準字設計",
+    "description": "標準字設計作品收錄在工作室成員之個人網站中，目前總共有七項作品可供您參考，歡迎前往！",
+    "hasDemo": true,
+    "hasCode": false,
+    "demoLink": "https://whangwang.github.io/typography.html",
+    "codeLink": "https://github.com/whangwang/todo",
+    "demoTitle": "前往",
+    "type": ["design"]
+  }]
+}

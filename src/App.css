@@ -1,0 +1,360 @@
+body{
+  background-color: #E5E5E5;
+}
+
+select{
+  height: 37px;
+  padding: 0px 15px 0px 15px;
+  font-size: 15px;
+  color: #2D4234;
+  background-color: transparent;
+  border: 2px solid #2D4234;
+  line-height: 33px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 0px;
+  background-image: url(./down-arrow.svg);
+  background-size: auto 6px;
+  background-repeat: no-repeat;
+  background-position: calc( 100% - 15px ) 13px;
+}
+
+a{
+  outline-color: none !important;
+  outline-style: none !important;
+  outline-width: none !important;
+}
+
+button{
+  padding: 0px 20px 0px 20px;
+  height: 37px;
+  color: white;
+  outline: none!important;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: #2D4234;
+  border: 2px solid #2D4234;
+  font-size: 15px;
+}
+
+button:hover{
+  background-color: #5F6D63;
+  border: 2px solid #5F6D63;
+}
+
+button.outline{
+  background-color: transparent;
+  color: #2D4234;
+}
+
+button.outline:hover{
+  color: #5F6D63;
+  border: 2px solid #5F6D63;
+}
+
+.App {
+  text-align: center;
+  background-color: #E5E5E5;
+}
+
+.App-logo {
+  width: 800px;
+  margin: auto;
+}
+
+.App-header{
+  padding: 30px;
+  width: 100%;
+  max-width: 1400px;
+  text-align: left;
+  margin: auto;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 10000;
+}
+
+.header-logo{
+  width: 35px;
+}
+
+.Link-area{
+  display: inline-block;
+  float: right;
+  height: 37px;
+  background-color: white;
+  margin-top: -3px;
+  padding: 0px 35px 0px 35px;
+  transform: skew(-10deg);
+}
+
+.Link-area>div{
+  transform: skew(10deg);
+}
+
+.Link-area a{
+  line-height: 37px;
+  color: #2D4234;
+  cursor: pointer;
+}
+
+.Link-area a:link{
+  color: #2D4234;
+  text-decoration: none;
+}
+
+.Link-area a:visited{
+  color: #2D4234;
+  text-decoration: none;
+}
+
+.Link-area a:hover{
+  color: #5F6D63;
+  text-decoration: none;
+}
+
+.Link-area a:active{
+  color: #5F6D63;
+  text-decoration: none;
+}
+
+.Link-area div.sperator{
+  width: 5px;
+  height: 5px;
+  background-color: #2D4234;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 16px;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.App-body{
+  margin-top: 144px;
+}
+
+.studio-intro{
+  width: 100%;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  color: #2D4234;
+}
+
+.studio-feature{
+  margin-top: 80px;
+}
+
+.studio-feature img{
+  width: 140px;
+  margin: auto;
+}
+
+.studio-feature h5{
+  color: #2D4234;
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.studio-feature p{
+  color: #666666;
+  text-align: left;
+}
+
+.titleDeco{
+  background-image: url(./title-mark-left.svg),
+                    url(./title-mark-right.svg);
+  background-repeat: no-repeat,no-repeat;
+  height: 37px;
+  background-position: left,right;
+  background-size: auto 100%,auto 100%;
+  line-height: 37px;
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 37px;
+}
+
+.titleDeco p{
+  line-height: 37px;
+  height: 37px;
+  color: white;
+  background-color: #2D4234;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+.portfolio{
+  margin-top: 60px;
+  text-align: left;
+}
+
+.portfolio-filter{
+   width: 200px;
+   float: right;
+}
+
+.portfolio-block{
+  background-color: white;
+  margin-top: 30px;
+  padding: 0px 15px 5px 15px;
+}
+
+.portfolio-block .preview-img{
+  width: calc( 100% + 30px );
+  padding-top: calc( (100% + 30px) * 9 /16 );
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -15px;
+  border-bottom: 4px solid #77E5E8;
+  background-position: center;
+}
+
+.portfolio-block .project-title{
+  font-size: 18px;
+  color: #2D4234;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.portfolio-block .project-description{
+  color: gray;
+}
+
+.portfolio-block .project-detail-btn{
+  margin-bottom: 20px;
+  height: 37px;
+  margin-top: 40px;
+}
+
+.portfolio-block .project-detail-btn button{
+  width: calc( 50% - 7.5px );
+  float: right;
+}
+
+.portfolio-block .project-detail-btn button.outline{
+  float: left;
+}
+
+.contactus{
+  margin-top: 60px;
+  text-align: left;
+}
+
+.contactus-area p{
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.deco-img{
+  height: 80px;
+  float: right;
+  margin-top: 25px;
+}
+
+.footer{
+  font-size: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.studio-feature-title{
+  display: none;
+}
+
+.menu-icon{
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .App-logo{
+    width: 70%;
+    margin-bottom: 40px;
+    float: left;
+    margin-right: 30%;
+  }
+  .Link-area{
+    display: none;
+  }
+  .header-logo{
+    display: none;
+  }
+  .App-body{
+    margin-top: 50px;
+    padding: 30px;
+  }
+  .studio-feature img{
+    width: 120px;
+  }
+  .studio-feature>.col-md-4{
+    margin-top: 60px;
+  }
+  .studio-feature>.col-md-4:first-of-type{
+    margin-top: -20px;
+  }
+  .studio-feature-title{
+    display: inline-block;
+    margin-top: 100px;
+  }
+  .portfolio{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .portfolio-filter{
+    float: unset;
+    margin-top: 20px;
+  }
+  .deco-img{
+    display: none;
+  }
+  .contactus{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .menu-icon{
+    display: block;
+    width: 30px;
+    float: right;
+    margin-top: 0px;
+    right: 30px;
+    position: fixed;
+    z-index: 10000;
+  }
+  .mobile-link{
+    position: fixed;
+    background-color: rgba(229,229,229,0.9);
+    width: 100vw;
+    left: 0px;
+    height: 100vh;
+    top: 0px;
+    z-index: 100000;
+    vertical-align: middle;
+    display: table;
+  }
+  .mobile-link a{
+    display: block;
+    font-size: 21px;
+    color: #2D4234!important;
+    margin-top: 40px;
+  }
+  .mobile-link a:first-of-type{
+    margin-top: -150px;
+  }
+  .mobile-link>div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  a{
+    user-select: none;
+  }
+}
