@@ -93,7 +93,7 @@ class App extends Component {
           <div className="portfolio-block">
           <div className="preview-img" style={{backgroundImage: "url("+item.img+")"}} />
           <h5 className="project-title">{item.title}</h5>
-          <p className="project-description">{String(item.description).split('#br').map(i => { return <p>{i}</p> })}</p>
+          <p className="project-description" style={{textAlign: "left"}}>{String(item.description).split('#br').map(i => { return <p>{i}</p> })}</p>
           <div className="project-detail-btn">
             {(item.hasCode) && (<a href={item.codeLink} target="_blank"><button className={item.hasDemo?"outline":""}>原始碼</button></a>)}
             {(item.hasDemo) && (<a href={item.demoLink} target="_blank"><button>{item.demoTitle?item.demoTitle:"線上Demo"}</button></a>)}
