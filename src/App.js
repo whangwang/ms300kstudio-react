@@ -11,6 +11,7 @@ import titleMarkRight from './title-mark-right.svg';
 import menuIcon from './menu-icon.svg';
 import data from './portfolio.json';
 import './App.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class App extends Component {
   constructor(props) {
@@ -49,7 +50,6 @@ class App extends Component {
     window.scroll(0, window.pageYOffset + ((target-window.pageYOffset>0)?5:-5));
   }
   scrollTo(target) {
-    let intervalId = setInterval(() => this.scrollStep(target), 1);
     if(this.state.display==true){
       window.document.body.style.overflow = "auto";
       this.setState({opacity: 1}, () => {
@@ -62,7 +62,6 @@ class App extends Component {
           },1);
       });
     }
-    this.setState({ intervalId: intervalId });
   }
   setCategory(e){
     this.setState({
@@ -122,9 +121,9 @@ class App extends Component {
       <div className="App">
         <div className="mobile-link" style={{display: (this.state.display)?"table":"none",opacity: this.state.opacity}}>
           <div>
-          <a onClick={() => this.scrollTo('studio-feature')}>服務內容</a>
-          <a onClick={() => this.scrollTo('portfolio')}>作品集</a>
-          <a onClick={() => this.scrollTo('contactus')}>聯絡我們</a>
+          <AnchorLink offset='150' onClick={this.scrollTo} href="#studio-feature">服務內容</AnchorLink>
+          <AnchorLink offset='50' onClick={this.scrollTo} href="#portfolio">作品集</AnchorLink>
+          <AnchorLink offset='100' onClick={this.scrollTo} href="#contactus">聯絡我們</AnchorLink>
           </div>
         </div>
         <div className="App-header">
@@ -132,9 +131,9 @@ class App extends Component {
           <img src={klogo} className="header-logo" alt="logo" />
           <div className="Link-area">
             <div>
-              <a onClick={() => this.scrollTo('studio-feature')}>服務內容</a><div className="sperator"></div>
-              <a onClick={() => this.scrollTo('portfolio')}>作品集</a><div className="sperator"></div>
-              <a onClick={() => this.scrollTo('contactus')}>聯絡我們</a>
+              <AnchorLink offset='100' href="#studio-feature">服務內容</AnchorLink><div className="sperator"></div>
+              <AnchorLink offset='100' href="#portfolio">作品集</AnchorLink><div className="sperator"></div>
+              <AnchorLink offset='100' href="#contactus">聯絡我們</AnchorLink>
             </div>
           </div>
         </div>
@@ -144,7 +143,7 @@ class App extends Component {
             Ms.300k是以三個大學志同道合的同學組成，提供各類網站與管理系統、平台開發、手機APP、網站優化等等，從UI到產品開發使客戶擁有良好的外包體驗，雖是大學生但我們積極進取且富有責任心，我們有十足的把握完成每位顧客的需求。
           </p>
           <h5 className="titleDeco studio-feature-title"><p>服務內容</p></h5>
-          <div className="studio-feature row" ref="studio-feature">
+          <div className="studio-feature row" id="studio-feature">
             <div className="col-md-4">
               <img src={iconCoding} className="Feature-icon"/>
               <h5>網頁/軟體開發</h5>
@@ -167,7 +166,7 @@ class App extends Component {
               </p>
             </div>
           </div>
-          <div className="portfolio" ref="portfolio">
+          <div className="portfolio" id="portfolio">
             <h5 className="titleDeco"><p>作品集</p></h5>
             <select className="portfolio-filter" onChange={this.setCategory}>
               <option value="all">全部</option>
@@ -179,7 +178,7 @@ class App extends Component {
               {this.renderPortfolio()}
             </div>
           </div>
-          <div className="contactus" ref="contactus">
+          <div className="contactus" id="contactus">
             <h5 className="titleDeco"><p>聯絡我們</p></h5>
             <div className="contactus-area">
               <img src={decoLogo} className="deco-img"/>
